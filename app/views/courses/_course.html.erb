@@ -1,37 +1,27 @@
 <div id="<%= dom_id course %>">
-  <p>
-    <strong>Title:</strong>
-    <%= course.title %>
-  </p>
-
-  <p>
-    <strong>Classfication:</strong>
-    <%= course.classfication %>
-  </p>
-
-  <p>
-    <strong>Language:</strong>
-    <%= course.language %>
-  </p>
-
-  <p>
-    <strong>Status:</strong>
-    <%= course.status %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= course.price %>
-  </p>
-
-  <p>
-    <strong>Instructor:</strong>
-    <%= course.instructor %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= course.description %>
-  </p>
-
+    <div class="row mb-3 container bg-light bg-gradient ">
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <%# <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> %>
+                <%= image_tag course.cover %>
+          </div>
+      </div>
+      <div class="col-md-6 bg-light">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong><%= course.title%></strong>
+            <div class="mb-1 text-muted">
+              <small>Created at: <%= course.created_at %></small> <br/>
+              <small>Instructor: <%= course.instructor %></small>
+              <br/> <br/>
+              <small>Description: </small>
+            </div>
+            <p class="mb-auto">
+              <%= course.description %>
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

@@ -5,15 +5,19 @@
 
   <div class="form-inputs">
     <%= f.input :title %>
-    <%= f.input :classfication %>
-    <%= f.input :language %>
-    <%= f.input :status %>
-    <%= f.input :price %>
+    <%= f.input :classfication, collection: ["Science", "Computer", "History", "Design"] %>
+    <%= f.input :language, collection: ["English", "French", "Spanish", "Japanese"] %>
+    <%= f.input :status , collection: ["Free", "Discounted"] %>
+    <%= f.input :price, placeholder:"20$", disabled: true %>
     <%= f.input :instructor %>
     <%= f.input :description %>
+    <br/>
+    <%= f.file_field :cover %>
+    <br/>
+    <br/>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit , class:"btn btn-success" %>
   </div>
 <% end %>
