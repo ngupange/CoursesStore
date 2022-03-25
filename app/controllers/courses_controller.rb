@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: %i[ show edit update destroy ]
+  # before_action :check_ownership, only: [ :edit, :update, :destroy]
 
   # GET /courses or /courses.json
   def index
@@ -67,4 +68,10 @@ class CoursesController < ApplicationController
     def course_params
       params.require(:course).permit(:title, :classfication, :language, :status, :price, :instructor, :description, :cover)
     end
+
+    # def check_ownership
+    #   if current_user.id!=@course.user_id
+    #     redirect_to courses_url, alert: "You have to be an admin or the owner of the course."
+    #   end
+    # end
 end
