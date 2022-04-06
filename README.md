@@ -1,24 +1,11 @@
-# README
+# PamphileNkurunzizaNgenzi_T2A2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Marketplace Project
 
-Things you may want to cover:
+# Links
 
-* Ruby version
+**GitHub Repository:** [Click here](https://github.com/ngupange/PamphileNkurunzizaNgenzi_T1A2)
 
-* System dependencies
+**Live Website:** [Click here](https://upbeat-edison-7ddccb.netlify.app/index.html/)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Purpose
