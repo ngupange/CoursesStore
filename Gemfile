@@ -55,6 +55,8 @@ gem 'simple_form'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'stripe', '~> 5.45'
 gem 'aws-sdk-s3', '~> 1.113'
+gem "net-http"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
