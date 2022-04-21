@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def set_default_role
     self.role ||= :user
   end
+
+    #Client side form validations sanitizing input
+    validates :first_name, presence: true
+    validates :last_name, presence: true
 end
