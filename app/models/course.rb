@@ -10,8 +10,5 @@ class Course < ApplicationRecord
     validates :status, presence: true
     validates :instructor, presence: true
     validates :description, presence: true
-    validates :cover, presence: true, format: {
-    with:    %r{\.(gif|jpg|png)\z}i,
-    message: 'Uploaded file must be a GIF, JPG or PNG image.'
-}
+    validates :cover, presence: true
 end
