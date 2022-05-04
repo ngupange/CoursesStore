@@ -20,4 +20,5 @@ class User < ApplicationRecord
     #Client side form validations sanitizing input
     validates :first_name, presence: true
     validates :last_name, presence: true
+    validates :contact, numericality: { only_integer: true }, :allow_nil => true
 end
