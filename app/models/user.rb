@@ -21,4 +21,5 @@ class User < ApplicationRecord
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :contact, numericality: { only_integer: true }, :allow_nil => true
+    validates :email, uniqueness: true
 end

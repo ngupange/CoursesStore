@@ -15,13 +15,14 @@
     <%= f.input :status,
                 required: true, 
                 collection: ["Free", "Discounted"] %>
-    <%= f.input :price, placeholder:"20$", disabled: true %>
+    <%= f.input :price, placeholder:"20$"%>
     <%= f.input :instructor,
                 required: true %>
     <%= f.input :description,
                 required: true %>
     <br/>
     <%= f.file_field :cover,
+                accept: 'image/png, image/gif, image/jpeg',
                 required: true %>
     <br/>
     <br/>
